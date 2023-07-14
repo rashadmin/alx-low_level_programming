@@ -1,6 +1,6 @@
 #include <stdio.h>
+/*Use This*/
 int main(void)
-/* Use this */
 {
 	char Mystr[100] = "\"Programming is like building a multilingual puzzle";
 
