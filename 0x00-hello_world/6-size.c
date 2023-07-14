@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * main - prints string
+ *
+ * Return: Always 0 (success) 
+ */
+
 int main()
 {
     int integerType;
