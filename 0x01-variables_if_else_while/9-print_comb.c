@@ -8,17 +8,16 @@
 int main(void)
 {
 	int letter;
-	int capletter;
 
 	for (letter = 48; letter <= 57; letter++)
 	{
-	for (capletter = 48; capletter <= 57; capletter++)
-        {
 	putchar(letter);
-	putchar(capletter);
+	if (letter!=57)
+	{
 	putchar(44);
 	putchar(32);
 	}
 	}
+	putchar('\n');
 	return (0);
 }
