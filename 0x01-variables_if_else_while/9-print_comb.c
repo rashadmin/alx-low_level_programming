@@ -7,15 +7,18 @@
  */
 int main(void)
 {
-	char letter;
-	char capletter;
+	int letter;
+	int capletter;
 
 	for (letter = 48; letter <= 57; letter++)
+	{
+	for (capletter = 48; capletter <= 57; capletter++)
         {
 	putchar(letter);
-	putchar(",");
-	putchar(" ");
-	}	
-	putchar('\n');
+	putchar(capletter);
+	putchar(44);
+	putchar(32);
+	}
+	}
 	return (0);
 }
