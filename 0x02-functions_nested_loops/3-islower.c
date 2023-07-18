@@ -8,7 +8,6 @@
 int _islower(int c)
 {	
 	char character;
-	int count;
 	for (character=97;character <= 122;character++)
 	if (putchar(c)==putchar(character))
 	{
@@ -18,8 +17,6 @@ int _islower(int c)
 	{
 	    return (1);
 	}
-	putchar(character);
-	putchar('\n');
 }
 
 int main(void)
