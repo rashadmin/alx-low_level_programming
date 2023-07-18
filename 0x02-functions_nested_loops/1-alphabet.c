@@ -1,4 +1,3 @@
-#include <main.h>
 
 /**
  * main - prints string
@@ -10,6 +9,6 @@ void print_alphabet(void)
 {	
 	char character;
 	for (character=97;character <= 122;character++) 
-	putchar(character);
-	putchar('\n');
+	_putchar(character);
+	_putchar('\n');
 }
