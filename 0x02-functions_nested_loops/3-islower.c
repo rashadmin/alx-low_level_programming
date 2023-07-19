@@ -9,7 +9,7 @@ int _islower(int c)
 {	
 	char character;
 	for (character=97;character <= 122;character++)
-	if (putchar(c)==putchar(character))
+	if (_putchar(c)==putchar(character))
 	{
 	    return (0);
 	}
