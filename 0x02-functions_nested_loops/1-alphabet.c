@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - prints string
@@ -7,8 +8,10 @@
 
 void print_alphabet(void)
 {	
-	char character;
-	for (character=97;character <= 122;character++) 
+	int character;
+	for (character=97;character <= 122;character++)
+	{ 
 	_putchar(character);
+	}
 	_putchar('\n');
 }
