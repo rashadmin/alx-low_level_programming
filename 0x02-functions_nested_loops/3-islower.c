@@ -8,13 +8,15 @@
 int _islower(int c)
 {	
 	char character;
+	int response;
 	for (character=97;character <= 122;character++)
-	if (_putchar(c)==putchar(character))
+	if (c==character)
 	{
-	    return (0);
+	    response = 1;
 	}
 	else
 	{
-	    return (1);
+	    response =  0;
 	}
+	return response;
 }
