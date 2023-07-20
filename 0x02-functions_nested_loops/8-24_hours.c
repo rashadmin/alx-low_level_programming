@@ -1,56 +1,33 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints string
- *
- * Return: Always 0 (success)
- */
-
+  * jack_bauer - Prints every minute of the day of Jack Bauer
+  *
+  * Return: ...
+  */
 void jack_bauer(void)
 {
-	int i = 0;
-	int min_1 = 48;
-	int min_2 = 48;
-	int hr_1 = 48;
-	int hr_2 = 48;
-	int count = 0;
-	if (i == 0)
-{
-      	 _putchar(hr_1);
-       	 _putchar(hr_2);
-       	 _putchar(58);
-       	 _putchar(min_1);
-       	 _putchar(min_2+count);
-       	 _putchar('\n');
-}
-	for (i = 1; i <= 1439; i++)
-{
-	count = (i%10);
-	if (count == 0)
-{
-	if (min_1 % 53 == 0)
-{
-	min_1= 48;
-	if (hr_2 % 57 == 0)
-{
-	hr_2 = 48;
-	hr_1++;
-}
-	else
-{
-	hr_2++;
-}
-}
-	else
-{
-	min_1++;
-}	
-}	
-	_putchar(hr_1);
-	_putchar(hr_2);	
-	_putchar(58);
-	_putchar(min_1);
-        _putchar(min_2+count);
-	_putchar('\n'); 
-}
+	int a, b, c, d;
+
+	for (a = 0; a <= 2; a++)
+	{
+		for (b = 0; b <= 9; b++)
+		{
+			if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
+			{
+				for (c = 0; c <= 5; c++)
+				{
+					for (d = 0; d <= 9; d++)
+					{
+						_putchar(a + '0');
+						_putchar(b + '0');
+						_putchar(58);
+						_putchar(c + '0');
+						_putchar(d + '0');
+						_putchar('\n');
+					}
+				}
+			}
+		}
+	}
 }
