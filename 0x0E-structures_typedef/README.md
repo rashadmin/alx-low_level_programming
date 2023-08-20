@@ -1,2 +1,0 @@
-STRUCTURES
-:WQ
